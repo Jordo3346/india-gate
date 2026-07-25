@@ -140,8 +140,6 @@ nav a.active::after{
 
 }
 
-/* HERO */
-
 /* ===========================
    HERO
 =========================== */
@@ -874,6 +872,41 @@ footer{
 
         height:85px;
 
+    }
+
+        .hero{
+        width:100%;
+        min-height:100vh;
+        height:auto;
+        box-sizing:border-box;
+
+        padding:150px 24px 70px;
+
+        justify-content:center;
+        text-align:center;
+
+        background-position:center center;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:650px;
+
+        margin-left:0;
+        margin-top:0;
+    }
+
+    .hero-divider{
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:clamp(48px, 14vw, 68px);
+    }
+
+    .hero-content > p:not(.tagline){
+        font-size:18px;
+        line-height:1.6;
     }
 
 }
