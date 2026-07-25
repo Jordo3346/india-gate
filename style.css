@@ -1172,3 +1172,454 @@ header.scrolled .logo img{
     }
 
 }
+
+/* ===========================
+   SPICE LEVEL BADGES
+=========================== */
+
+.menu-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.spice-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 12px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.spice-mild {
+    background: #eef8ee;
+    color: #2e7d32;
+}
+
+.spice-medium {
+    background: #fff6df;
+    color: #b77900;
+}
+
+.spice-spicy {
+    background: #fdeaea;
+    color: #c62828;
+}
+
+/* Display spice levels as chilli icons */
+
+.spice-badge {
+    padding: 0;
+    background: transparent;
+    font-size: 0;
+    letter-spacing: 2px;
+}
+
+.spice-badge::before {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.spice-mild::before {
+    content: "🌶";
+}
+
+.spice-medium::before {
+    content: "🌶 🌶";
+}
+
+.spice-spicy::before {
+    content: "🌶 🌶 🌶";
+}
+
+.menu-item-feature {
+    display: inline-block;
+    margin: 10px 0 0;
+
+    color: #b08a3c;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* ===========================
+   EXTRAS AND SPECIALS
+=========================== */
+
+.menu-subsection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.menu-subsection {
+    min-width: 0;
+}
+
+.menu-subsection-wide {
+    grid-column: 1 / -1;
+}
+
+.menu-subsection-title {
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(176, 138, 60, 0.35);
+
+    color: #b08a3c;
+
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+}
+
+.menu-items-single {
+    grid-template-columns: 1fr;
+}
+
+.menu-special-card {
+
+    background: linear-gradient(
+        135deg,
+        rgba(176,138,60,.18),
+        rgba(176,138,60,.05)
+    );
+
+    border: 1px solid rgba(176,138,60,.35);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.menu-special-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 16px 35px rgba(0,0,0,.15);
+
+}
+
+.menu-special-badge {
+
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: #b08a3c;
+
+    color: white;
+
+    font-size: .72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 760px) {
+    .menu-subsection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-subsection-wide {
+        grid-column: auto;
+    }
+}
+
+/* ===========================
+   TAKEOUT MENU HERO UPGRADE
+=========================== */
+
+.takeout-menu-hero {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 24px;
+
+    background-image:
+        url("images/butter-chicken.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.takeout-menu-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 8, 10, 0.92),
+            rgba(25, 8, 10, 0.68),
+            rgba(25, 8, 10, 0.42)
+        );
+}
+
+.takeout-menu-hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: min(1100px, 100%);
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.takeout-menu-hero-content .eyebrow {
+    margin: 0 0 14px;
+
+    color: #d7b568;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.takeout-menu-hero-content h1 {
+    max-width: 700px;
+    margin: 0 auto 20px;
+
+    color: #ffffff;
+
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 0.98;
+}
+
+.takeout-menu-hero-text {
+    max-width: 590px;
+    margin: 0 auto 32px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+.takeout-menu-hero .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 190px;
+    padding: 15px 26px;
+
+    border: 1px solid #b08a3c;
+    border-radius: 999px;
+
+    background: #b08a3c;
+    color: #ffffff;
+
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.takeout-menu-hero .hero-button:hover {
+    transform: translateY(-3px);
+
+    background: #c49a48;
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 760px) {
+    .takeout-menu-hero {
+        min-height: 500px;
+        padding: 80px 22px;
+
+        background-position: 60% center;
+    }
+
+    .takeout-menu-hero-overlay {
+        background: rgba(25, 8, 10, 0.74);
+    }
+
+    .takeout-menu-hero-content {
+        text-align: center;
+    }
+
+    .takeout-menu-hero-text {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* ===========================
+   STICKY MENU NAVIGATION
+=========================== */
+
+.menu-category-nav {
+
+    position: sticky;
+    top: 70px;   /* same height as your header */
+
+    z-index: 900;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 16px 20px;
+
+    background: rgba(25, 8, 10, 0.96);
+
+    backdrop-filter: blur(8px);
+
+    border-top: 1px solid rgba(176,138,60,.25);
+    border-bottom: 1px solid rgba(176,138,60,.25);
+
+}
+
+.menu-category-nav a {
+
+    color: #f6f1e7;
+
+    text-decoration: none;
+
+    font-size: .9rem;
+    font-weight: 600;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+.menu-category-nav a:hover {
+
+    background: #b08a3c;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+.menu-content {
+    scroll-margin-top: 190px;
+}
+
+/* ==============================
+   404 PAGE
+============================== */
+
+.error-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(rgba(30,10,10,.70),
+                        rgba(30,10,10,.70)),
+        url("images/hero.jpg") center/cover no-repeat;
+
+}
+
+.error-content {
+
+    max-width: 700px;
+
+    color: white;
+
+}
+
+.error-content h1 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 7rem;
+
+    color: #d4af37;
+
+    margin-bottom: 25px;
+
+}
+
+.error-content h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #d4af37;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 30px;
+
+}
+
+.error-content p {
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+.error-content .hero-button {
+
+    margin-top: 20px;
+
+    display: inline-block;
+
+}
