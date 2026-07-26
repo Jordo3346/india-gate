@@ -196,30 +196,6 @@ nav a.active::after{
 
 }
 
-/* Lotus Divider */
-
-.hero-divider{
-
-    display:flex;
-
-    justify-content:flex-start;
-
-    margin:20px 0 40px;
-
-}
-
-.hero-divider img{
-
-    width:600px;
-
-    max-width:100%;
-
-    height:auto;
-
-    display:block;
-
-}
-
 /* Heading */
 
 .hero h1{
@@ -964,11 +940,6 @@ footer{
         height:85px;
     }
 
-    .fade-in{
-        opacity:1;
-        transform:none;
-    }
-
 }
 
 /* ===========================
@@ -1583,6 +1554,10 @@ html {
 /* ===========================
    STICKY MENU NAVIGATION
 =========================== */
+
+.category-menu-toggle{
+    display:none;
+}
 
 .menu-category-nav {
 
