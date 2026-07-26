@@ -860,7 +860,7 @@ footer{
 
 @media (max-width: 900px){
 
-        .hero{
+    .hero{
         width:100%;
         min-height:100vh;
         height:auto;
@@ -898,16 +898,28 @@ footer{
     .header-container{
         position:relative;
 
-        width:100%;
+        width:auto;
         max-width:none;
         box-sizing:border-box;
 
         flex-direction:row;
         align-items:center;
-        justify-content:space-between;
 
         margin:0;
-        padding:10px 20px;
+        padding:10px 80px 10px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+
+        position:absolute;
+        top:50%;
+        right:20px;
+
+        margin:0;
+        padding:10px;
+
+        transform:translateY(-50%);
     }
 
     nav{
@@ -942,16 +954,6 @@ footer{
         text-align:center;
     }
 
-    .menu-toggle{
-        display:block;
-
-        flex-shrink:0;
-        margin-left:auto;
-        padding:10px;
-
-        position:static;
-    }
-
     .logo{
         flex-shrink:1;
     }
@@ -961,8 +963,6 @@ footer{
         max-width:220px;
         height:85px;
     }
-
-
 
 }
 
