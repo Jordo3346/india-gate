@@ -116,3 +116,49 @@ if (menuToggle && mainNavigation) {
     });
 
 }
+
+const categoryMenuToggle =
+    document.querySelector(".category-menu-toggle");
+
+const categoryNavigation =
+    document.querySelector(".menu-category-nav");
+
+if (categoryMenuToggle && categoryNavigation) {
+
+    categoryMenuToggle.addEventListener("click", () => {
+
+        categoryNavigation.classList.toggle("mobile-open");
+
+        const menuIsOpen =
+            categoryNavigation.classList.contains("mobile-open");
+
+        categoryMenuToggle.setAttribute(
+            "aria-expanded",
+            menuIsOpen
+        );
+
+        categoryMenuToggle.innerHTML = menuIsOpen
+            ? '<i class="fa-solid fa-xmark"></i><span>Close Menu Categories</span>'
+            : '<i class="fa-solid fa-bars"></i><span>Browse Menu Categories</span>';
+
+    });
+
+    categoryNavigation.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            categoryNavigation.classList.remove("mobile-open");
+
+            categoryMenuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            categoryMenuToggle.innerHTML =
+                '<i class="fa-solid fa-bars"></i><span>Browse Menu Categories</span>';
+
+        });
+
+    });
+
+}

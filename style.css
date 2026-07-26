@@ -1531,10 +1531,14 @@ html {
 
 @media (max-width: 760px) {
     .takeout-menu-hero {
-        min-height: 500px;
-        padding: 80px 22px;
+        min-height: 360px;
+        padding: 55px 22px;
 
         background-position: 60% center;
+    }
+
+    .takeout-menu-hero .hero-button {
+        display: none;
     }
 
     .takeout-menu-hero-overlay {
@@ -1548,6 +1552,20 @@ html {
     .takeout-menu-hero-text {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .takeout-menu-page {
+        padding-top: 85px;
+    }
+
+    .takeout-menu-hero-content h1 {
+        font-size: clamp(2.8rem, 14vw, 4rem);
+    }
+
+    .takeout-menu-hero-text {
+        margin-bottom: 24px;
+        font-size: 1rem;
+        line-height: 1.55;
     }
 }
 
@@ -1615,6 +1633,94 @@ html {
 
 .menu-content {
     scroll-margin-top: 190px;
+}
+
+/* ===========================
+   MOBILE CATEGORY NAVIGATION
+=========================== */
+
+@media (max-width: 760px){
+
+    .category-menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+
+        position:sticky;
+        top:70px;
+
+        z-index:1000;
+
+        width:100%;
+        padding:16px 20px;
+
+        border:none;
+        background:#2b0000;
+        color:white;
+
+        font-family:'Poppins', sans-serif;
+        font-size:16px;
+        font-weight:600;
+
+        cursor:pointer;
+    }
+
+    .menu-category-nav{
+        display:none;
+
+        position:fixed;
+        top:90px;
+        right:16px;
+        left:16px;
+
+        z-index:1100;
+
+        max-height:calc(100vh - 120px);
+        overflow-y:auto;
+
+        overscroll-behavior:contain;
+        -webkit-overflow-scrolling:touch;
+
+        flex-direction:column;
+        align-items:stretch;
+        gap:4px;
+
+        padding:16px;
+
+        border:1px solid rgba(176, 138, 60, 0.45);
+        border-radius:16px;
+
+        background:rgba(25, 8, 10, 0.98);
+
+        box-shadow:0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    .menu-category-nav::after{
+        content:"Swipe to see more categories";
+        display:block;
+
+        padding:12px 8px 4px;
+
+        color:rgba(255,255,255,.65);
+
+        font-size:12px;
+        text-align:center;
+    }
+
+    .menu-category-nav.mobile-open{
+        display:flex;
+    }
+
+    .menu-category-nav a{
+        width:100%;
+        box-sizing:border-box;
+
+        padding:13px 16px;
+
+        text-align:center;
+    }
+
 }
 
 /* ==============================
