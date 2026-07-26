@@ -940,6 +940,49 @@ footer{
         height:85px;
     }
 
+    .about-container{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .about-image{
+        order:1;
+    }
+
+    .about-text{
+        order:2;
+    }
+
+    .about-image img{
+        width:100%;
+        height:320px;
+        object-fit:cover;
+    }
+
+    .about-text h2{
+        text-align:center;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .contact-info{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .map{
+        width:100%;
+        min-width:0;
+    }
+
+    .map iframe{
+        display:block;
+        width:100%;
+    }
+
 }
 
 /* ===========================

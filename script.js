@@ -113,7 +113,27 @@ if (menuToggle && mainNavigation) {
             ? '<i class="fa-solid fa-xmark"></i>'
             : '<i class="fa-solid fa-bars"></i>';
 
+    
+
     });
+
+    mainNavigation.querySelectorAll("a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mainNavigation.classList.remove("mobile-open");
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Open navigation"
+        );
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
 
 }
 
