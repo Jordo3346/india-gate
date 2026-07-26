@@ -89,3 +89,30 @@ backToTop.addEventListener("click", () => {
     });
 
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNavigation = document.querySelector("header nav");
+
+if (menuToggle && mainNavigation) {
+
+    menuToggle.addEventListener("click", () => {
+
+        mainNavigation.classList.toggle("mobile-open");
+
+        const menuIsOpen =
+            mainNavigation.classList.contains("mobile-open");
+
+        menuToggle.setAttribute(
+            "aria-label",
+            menuIsOpen
+                ? "Close navigation"
+                : "Open navigation"
+        );
+
+        menuToggle.innerHTML = menuIsOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+}
