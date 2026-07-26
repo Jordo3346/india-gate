@@ -964,6 +964,11 @@ footer{
         height:85px;
     }
 
+    .fade-in{
+        opacity:1;
+        transform:none;
+    }
+
 }
 
 /* ===========================
