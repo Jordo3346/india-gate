@@ -1712,14 +1712,3 @@ html {
 
 }
 
-@media (max-width: 900px){
-
-    .menu-toggle{
-        position:fixed !important;
-        top:230px !important;
-        right:20px !important;
-        z-index:9999 !important;
-
-        background:red !important;
-    }
-}
