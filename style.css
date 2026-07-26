@@ -895,9 +895,18 @@ footer{
         line-height:1.6;
     }
 
-        .header-container{
+    .header-container{
         position:relative;
+
+        width:100%;
+        max-width:none;
+        box-sizing:border-box;
+
         flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+
+        margin:0;
         padding:10px 20px;
     }
 
@@ -935,11 +944,25 @@ footer{
 
     .menu-toggle{
         display:block;
+
+        flex-shrink:0;
+        margin-left:auto;
+        padding:10px;
+
+        position:static;
+    }
+
+    .logo{
+        flex-shrink:1;
     }
 
     .logo img{
+        display:block;
+        max-width:220px;
         height:85px;
     }
+
+
 
 }
 
