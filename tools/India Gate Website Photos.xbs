@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="India Gate Website Photos">
+    <Resize mode="0" width="1600" height="1600" unit="0" ratio="true" orientation="false" enlarge="0" resample="7" gamma_correct="false"/>
+    <Clean_metadata flags="14"/>
+    <Output folder="C:/Users/pslow/OneDrive/Documents/India_Gate286/optimized" filename="{Filename}" case="0" startIndex="1" format="JPEG">
+        <Options overwrite="1" orgDate="false" keepMeta="true" keepICC="false" keepFolder="false" checkFilesize="false" keepParentFolder="false" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" beep="true" openBrowser="false" clearItems="false"/>
+        <JPEG useJPEGli="false" quality="85" progressive="true" optimizeHuffman="true" rebuildThumb="true" orgQuality="false" DCTMethod="2" subSampling="2" smoothFactor="0"/>
+    </Output>
+</XnView_script>
