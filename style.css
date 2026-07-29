@@ -1296,8 +1296,10 @@ header.scrolled .logo img{
 }
 
 .menu-item {
-    padding: 26px 0;
-    border-bottom: 1px solid rgba(182, 139, 44, 0.3);
+    padding: 20px 0;
+
+    border-bottom:
+        1px solid rgba(182, 139, 44, 0.3);
 }
 
 .menu-item-header {
@@ -1324,10 +1326,14 @@ header.scrolled .logo img{
 
 .menu-item p {
     max-width: 440px;
-    margin: 10px 0 0;
+
+    margin: 7px 0 0;
+
     color: #666;
+
     font-size: 16px;
-    line-height: 1.7;
+
+    line-height: 1.6;
 }
 
 /* ===========================
@@ -1713,7 +1719,6 @@ html {
     top: 70px;   /* same height as your header */
 
     z-index: 900;
-    z-index: 100;
 
     display: flex;
     justify-content: center;
@@ -1761,8 +1766,32 @@ html {
 
 }
 
+.menu-category-nav a.active {
+
+    background: #d4af37;
+
+    color: #2b0000;
+
+    box-shadow:
+        0 5px 16px rgba(212, 175, 55, 0.24);
+
+    transform: translateY(-1px);
+
+}
+
+.menu-category-nav a.active:hover {
+
+    background: #d4af37;
+
+    color: #2b0000;
+
+}
+
 .menu-content {
     scroll-margin-top: 190px;
+
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 /* ===========================
@@ -1770,6 +1799,13 @@ html {
 =========================== */
 
 @media (max-width: 760px){
+
+    .menu-content{
+
+        padding-top:65px;
+        padding-bottom:65px;
+
+    }
 
     .category-menu-toggle{
         display:flex;
