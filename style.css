@@ -1718,7 +1718,7 @@ html {
     position: sticky;
     top: 70px;   /* same height as your header */
 
-    z-index: 900;
+    z-index: 100;
 
     display: flex;
     justify-content: center;
@@ -1816,7 +1816,7 @@ html {
         position:sticky;
         top:70px;
 
-        z-index:1000;
+        z-index:100;
 
         width:100%;
         padding:16px 20px;
@@ -1840,7 +1840,7 @@ html {
         right:16px;
         left:16px;
 
-        z-index:1100;
+        z-index:200;
 
         max-height:calc(100vh - 120px);
         overflow-y:auto;
