@@ -1973,3 +1973,53 @@ html {
 .phone-link:hover {
     color: #d4af37;
 }
+
+/* ========================================
+   INDO-CHINESE FUSION FEATURE
+======================================== */
+
+.fusion-feature {
+    padding: 90px 10%;
+    background: #f8f3eb;
+}
+
+.fusion-feature-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.fusion-feature-image img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.fusion-feature-content h2 {
+    margin: 8px 0 22px;
+}
+
+.fusion-feature-content > p {
+    line-height: 1.8;
+}
+
+.fusion-coming-soon {
+    margin-top: 32px;
+    padding-top: 26px;
+    border-top: 1px solid #d8b45a;
+}
+
+.fusion-coming-soon h3 {
+    margin: 0 0 12px;
+}
+
+.fusion-coming-soon p {
+    margin: 0;
+    line-height: 1.7;
+}
