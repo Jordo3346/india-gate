@@ -2023,3 +2023,35 @@ html {
     margin: 0;
     line-height: 1.7;
 }
+
+@media (max-width: 768px) {
+
+    .fusion-feature {
+        padding: 60px 24px;
+    }
+
+    .fusion-feature-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .fusion-feature-image img {
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .fusion-feature-content {
+        text-align: left;
+    }
+
+    .fusion-feature-content h2 {
+        margin-top: 8px;
+        font-size: 2rem;
+    }
+
+    .fusion-coming-soon {
+        margin-top: 26px;
+        padding-top: 22px;
+    }
+}
