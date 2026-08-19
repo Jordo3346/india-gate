@@ -1665,6 +1665,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.takeout-specials-section {
+    grid-column: 1 / -1;
+    width: min(760px, 100%);
+    justify-self: center;
+    margin: 0 auto;
+}
+
 @media (max-width: 760px) {
     .takeout-menu-hero {
         min-height: 360px;
